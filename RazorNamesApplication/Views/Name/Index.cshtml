@@ -1,0 +1,15 @@
+﻿@model NameModel
+
+<h2>Registration</h2>
+
+@using (Html.BeginForm("SubmitName", "Name", FormMethod.Post))
+{
+    <div class="container-full" style="background-color:aliceblue">
+        <div class="container">
+            @Html.LabelFor(x => x.Name)
+            @Html.TextBoxFor(x => x.Name)
+
+            <input type="submit" value="Submit" />
+        </div>
+    </div>
+}
